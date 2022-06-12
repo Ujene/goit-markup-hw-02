@@ -1,0 +1,266 @@
+/* Colors for pages */
+/* цвет заголовков - #212121 */
+/* цвет основного текста секций #757575 */
+/* белый цвет мейна #FFFFFF */
+/* цвет ссылок  #2196F3 */
+/* фон футера #2F303A */
+/* секция what we do фон ##E5E5E5 */
+/* секция наша команда фон ##F5F4FA */
+
+
+:root{
+	--ftr-background-color: #2F303A;
+	--sect-wwd-bgc: #E5E5E5;
+	--sect-ourteam-bgc: #F5F4FA;
+	--link-color: #2196F3;
+	--h-color: #212121;
+	--main-text-color: #757575;
+	--white-color: #FFFFFF;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+/* Logo styles */
+
+.logo{
+	color: #000000;
+	font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 31px;
+}
+
+.web-logo{
+	color: var(--link-color);
+		font-family: 'Raleway';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 31px;
+		letter-spacing: 0.03em;
+}
+
+/* Nav menu styles */
+
+
+.nav a{
+color: var(--h-color);
+font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+}
+
+.nav a:hover,
+.nav a:focus{
+	color: var(--link-color)
+}
+
+/* E-mail + Tel styles */
+
+.contacts a{
+color: var(--main-text-color);
+}
+
+.contacts a:focus,
+.contacts a:hover{
+	color: var(--link-color)
+}
+
+
+/* ========== */
+/* Main Section styles */
+/* ========== */
+
+/* Hero Section */
+
+.hero{
+	background-color: var(--ftr-background-color)
+}
+
+.hero > h1{
+color: var(--white-color);
+font-style: normal;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 60px;
+}
+
+.hero-button{
+	background-color: var(--link-color);
+	color: var(--white-color);
+	font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 30px;
+}
+
+/* Feature section styles */
+
+.features h3{
+color: var(--h-color);
+font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+}
+
+.features p{
+	color: var(--main-text-color);
+	font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+}
+
+/* What we do Section styles */
+
+.projects h2{
+	color: var(--h-color);
+	font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 42px;
+		text-align: center;
+		letter-spacing: 0.03em;
+}
+
+/* Our team section styles */
+
+/* Title styles */
+.team h2{
+	color: var(--h-color);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+/* Team members names styles */
+
+.team h3{
+color: var(--h-color);
+font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+/* Rank styles */
+
+.team p{
+	color: var(--main-text-color);
+	font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		letter-spacing: 0.03em;
+}
+
+/* Footer Section Styles */
+
+.footer{
+	background-color: var(--ftr-background-color)
+}
+/* Footer Logo Styles */
+
+.footer-logo {
+	color: var(--white-color);
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+}
+
+.footer-web-logo {
+	color: var(--link-color);
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	letter-spacing: 0.03em;
+}
+/* Address styles */
+
+.address{
+	color: var(--white-color);
+	font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+}
+
+/* Footer contacts styles */
+
+.footer-contacts{
+	color: rgba(255, 255, 255, 0.6);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+}
+
+.footer-contacts:focus,
+.footer-contacts:hover {
+	color: var(--link-color)
+}
+
+
+/* =====Portfolio page styles===== */
+
+/* Product name styles */
+
+.list-name{
+	color: var(--h-color);
+	font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 36px;
+		letter-spacing: 0.06em;
+}
+
+/* Product category styles */
+
+.list-type {
+	color: var(--main-text-color);
+	font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 30px;
+		letter-spacing: 0.03em;
+}
+
+.filter-button{
+	color: var(--h-color);
+background-color: var(--sect-ourteam-bgc);
+	font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 26px;
+		text-align: center;
+		letter-spacing: 0.03em;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+color: var(--white-color);
+background-color: var(--link-color);
+}
