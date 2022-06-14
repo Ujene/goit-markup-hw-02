@@ -44,13 +44,7 @@ ul {
 }
 
 .web-logo{
-	color: var(--link-color);
-	font-family: 'Raleway', sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.2;
-	letter-spacing: 0.03em;
+color: var(--link-color);
 }
 /* Nav menu styles */
 .nav-link{
@@ -80,6 +74,11 @@ color: var(--link-color)
 
 /* E-mail + Tel styles */
 
+.contacts-link{
+color: var(--main-text-color);
+text-decoration: none;
+font-weight: 500;
+}
 
 .contacts-link:focus,
 .contacts-link:hover{
@@ -126,6 +125,7 @@ line-height: 1.9;
 color: var(--h-color);
 font-style: normal;
 font-weight: 700;
+font-size: 14px;
 line-height: 1.2;
 letter-spacing: 0.03em;
 }
@@ -229,6 +229,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.7;
 letter-spacing: 0.03em;
+text-decoration: none;
 }
 
 .footer-contacts:focus,
