@@ -16,6 +16,8 @@
 	--h-color: #212121;
 	--main-text-color: #757575;
 	--secondary-color: #FFFFFF;
+	--items: 3;
+	--indent: 30px;
 }
 
 body {
@@ -29,7 +31,52 @@ ul {
 	list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul{
+	margin:0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* ================Flex сетка================================ */
+/* Родитель */
+.grid-set {
+	display: flex;
+	flex-wrap: wrap;
+	margin: calc(-1 * var(--indent) / 2);
+}
+
+/* Ребенок */
+
+.grid-set-item {
+	flex-basis: calc((100% - (var(--indent)) * var(--items)) / var(--items));
+	margin: calc(var(--indent) / 2);
+}
+/* ================================================ */
+
+.container{
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	/* outline: 2px solid green */
+}
 /* Header */
+
+.header-flex {
+	display: flex;
+	align-items: center;
+}
 
 /* Logo styles */
 
@@ -41,6 +88,9 @@ ul {
 	font-size: 26px;
 	line-height: 1.2;
 	text-decoration: none;
+	margin-right: 93px;
+	padding-top: 24px;
+	padding-bottom: 25px;
 }
 
 .web-logo{
@@ -71,7 +121,14 @@ text-decoration: none;
 color: var(--link-color)
 }
 
+.nav-content {
+	display: flex;
+}
 
+.nav-content-list:not(:last-child) {
+	margin-right: 50px;
+	padding-inline-start: unset;
+}
 /* E-mail + Tel styles */
 
 .contacts-link{
@@ -85,12 +142,26 @@ font-weight: 500;
 color: var(--link-color)
 }
 
+.contacts-group {
+	display: flex;
+	margin-left: auto;
+}
+
+.contacts-list:not(:last-child) {
+	margin-right: 50px;
+}
 
 /* ========== */
 /* Main Section styles */
 /* ========== */
 
 /* Hero Section */
+
+.hero-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 .hero{
 background-color: var(--ftr-background-color)
@@ -103,6 +174,8 @@ font-weight: 900;
 font-size: 44px;
 line-height: 1.4;
 text-transform: uppercase;
+padding-top: 200px;
+text-align: center;
 }
 
 .hero-button{
@@ -112,6 +185,10 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.9;
+border-radius: 4px;
+border-style: none;
+margin-top: 30px;
+margin-bottom: 200px;
 }
 
 .hero-button:hover,
@@ -137,6 +214,16 @@ line-height: 1.7;
 letter-spacing: 0.03em;
 }
 
+.features-group {
+	display: flex;
+	padding-inline-start: unset;
+	justify-content: space-between;
+}
+
+.features-pstn:not(:last-child) {
+	margin-right: 30px;
+}
+
 /* What we do Section styles */
 
 .projects-title{
@@ -147,6 +234,11 @@ font-size: 36px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 50px;
+}
+
+.list-pad {
+	padding-inline-start: unset;
 }
 
 /* Our team section styles */
@@ -160,6 +252,8 @@ font-size: 36px;
 line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
+/* padding-top: 94px; */
+padding-bottom: 50px;
 }
 
 /* Team members names styles */
@@ -172,6 +266,7 @@ font-size: 16px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
+padding-top: 30px;
 }
 
 /* Rank styles */
@@ -183,6 +278,13 @@ font-size: 16px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
+padding-bottom: 30px;
+}
+
+.team-group {
+	--items: 4;
+	padding-inline-start: unset;
+	/* margin-bottom: 94px; */
 }
 
 /* Footer Section Styles */
@@ -200,6 +302,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.2;
 text-decoration: none;
+padding-top: 60px;
 }
 
 .footer-web-logo {
@@ -237,6 +340,9 @@ text-decoration: none;
 color: var(--link-color)
 }
 
+.footer-address{
+	padding-inline-start: unset;
+}
 
 /* =====Portfolio page styles===== */
 
@@ -251,6 +357,14 @@ line-height: 36px;
 letter-spacing: 0.06em;
 }
 
+.product-group {
+	padding-inline-start: unset;
+}
+
+.product-name {
+	padding: 20px 24px;
+}
+
 /* Product category styles */
 
 .list-type {
@@ -259,6 +373,20 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.8;
 letter-spacing: 0.03em;
+}
+
+.bottom-line {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.paddings {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.footer.paddings {
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .filter-button{
@@ -271,6 +399,11 @@ line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
 cursor: pointer;
+margin-bottom: 50px;
+margin-right: 8px;
+border: none;
+border-radius: 4px;
+padding: 6px 22px;
 }
 
 .filter-button:hover,
@@ -282,4 +415,10 @@ background-color: var(--link-color);
 .filter-button.current{
 color: var(--secondary-color);
 background-color: var(--link-color);
+}
+
+.filter {
+	padding-inline-start: unset;
+	display: flex;
+	justify-content: center;
 }
